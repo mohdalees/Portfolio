@@ -1,0 +1,18 @@
+[
+    {
+        "title": "Service Booking App",
+        "tech": "MERN",
+        "framework":"Tailwind,Express",
+        "desc": "Users can book local service providers."
+    },
+    {
+        "title": "Food Order Website",
+        "tech": "React + Node",
+        "desc": "Online food ordering system."
+    },
+    {
+        "title": "Portfolio Website",
+        "tech": "React + Flask + MongoDB",
+        "desc": "My personal portfolio."
+    }
+]

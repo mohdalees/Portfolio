@@ -1,0 +1,63 @@
+.home-container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+}
+
+.home-glass {
+  padding: 30px;
+  border-radius: 18px;
+  text-align: center;
+  color: white;
+  backdrop-filter: blur(12px);
+  background: rgba(255, 255, 255, 0.12);
+  box-shadow: 0 8px 32px rgba(0, 255, 255, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+.home-glass h1 {
+  color: #00e5ff;
+}
+
+.home-glass p {
+  color: #e0f7fa;
+}
+
+
+.Dp>img {
+    border-radius: 23rem;
+    width: 18em;
+    height: 18.1em;
+} 
+
+.home-con {
+ 
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+} 
+
+ .home-intro {
+    width: 25rem;
+    margin: 0 1.2rem;
+} 
+
+
+.p-intro {
+    font-family: "Playwrite CU Guides", cursive;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 1.1rem;
+}
+
+.wel {
+    font-family: "SN Pro", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 2.1rem;
+
+
+}

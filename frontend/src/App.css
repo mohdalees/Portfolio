@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=SN+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+CU+Guides&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background: rgba(15, 32, 39, 0.9);
+    backdrop-filter: blur(12px);
+    box-shadow: 0 4px 16px rgba(0, 255, 255, 0.15);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+.navbar h2 {
+    color: #00e5ff;
+    margin: 0;
+}
+
+.navbar a {
+    color: #e0f7fa;
+    margin: 0 12px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.navbar a:hover {
+    color: #00e5ff;
+}
+
+
+/* .container {
+    padding: 20px;
+    margin-bottom: 10rem;
+} */
+
+.card {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin: 10px;
+}
+
+.footer {
+    text-align: center;
+    padding: 12px;
+    background: rgba(15, 32, 39, 0.9); /* darker glass */
+    backdrop-filter: blur(12px);
+    box-shadow: 0 -4px 16px rgba(0, 255, 255, 0.15);
+    border-top: 1px solid rgba(255, 255, 255, 0.25);
+    color: #e0f7fa;
+}
+
+
