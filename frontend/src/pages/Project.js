@@ -1,12 +1,13 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
 import "./Projects.css";
- 
+const API_URL = import.meta.env.VITE_API_URL;
+
 export default function Projects() {
   const [projects, setProjects] = useState([]);
 
   useEffect(() => {
-    axios.get("http://127.0.0.1:5000/api/projects")
+    axios.get(`${API_URL}/api/projects`)
       .then(res => setProjects(res.data));
   }, []);
 

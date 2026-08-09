@@ -1,12 +1,13 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
 import "./About.css";
+const API_URL = import.meta.env.VITE_API_URL;
 
 export default function About() {
   const [about, setAbout] = useState(null);
 
   useEffect(() => {
-    axios.get("http://127.0.0.1:5000/api/about")
+    axios.get(`${API_URL}/api/about`)
       .then(res => setAbout(res.data));
   }, []);
 
