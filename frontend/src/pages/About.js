@@ -8,7 +8,8 @@ export default function About() {
 
   useEffect(() => {
     axios.get(`${API_URL}/api/about`)
-      .then(res => setAbout(res.data));
+      .then(res => setAbout(res.data))
+       .catch((err) => console.error("About API error:", err));
   }, []);
 
   if (!about) return <h2 style={{ textAlign: "center", color: "white" }}>Loading...</h2>;

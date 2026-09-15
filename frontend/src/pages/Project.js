@@ -8,7 +8,8 @@ export default function Projects() {
 
   useEffect(() => {
     axios.get(`${API_URL}/api/projects`)
-      .then(res => setProjects(res.data));
+      .then(res => setProjects(res.data))
+      .catch((err) => console.error("Projects API error:", err));
   }, []);
 
   return (
