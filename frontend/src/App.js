@@ -8,7 +8,7 @@ function App() {
   return (
     <Router>
       <nav className="navbar">
-        <h2>My Portfolio</h2>
+        {/* <h2>My Portfolio</h2> */}
         <div>
           <Link to="/">Home</Link>
           <Link to="/about">About</Link>

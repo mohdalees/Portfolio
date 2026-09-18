@@ -1,9 +1,17 @@
-.home-container {
-  height: 100vh;
+.container {
+  background: #4b6322;
+  min-height: 100vh;
+  width: 100%;
+}
+
+.home-con {
   display: flex;
-  justify-content: center;
+  flex-direction: row-reverse;
   align-items: center;
-  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  justify-content: space-between;
+  min-height: 100vh;
+  margin: 0 71px;
+  gap: 3rem;
 }
 
 .home-glass {
@@ -15,6 +23,7 @@
   background: rgba(255, 255, 255, 0.12);
   box-shadow: 0 8px 32px rgba(0, 255, 255, 0.2);
   border: 1px solid rgba(255, 255, 255, 0.25);
+  max-width: 100%;
 }
 
 .home-glass h1 {
@@ -25,39 +34,155 @@
   color: #e0f7fa;
 }
 
+.profile-image {
+  flex-shrink: 0;
+}
 
-.Dp>img {
-    border-radius: 23rem;
-    width: 18em;
-    height: 18.1em;
-} 
+.profile-image > img {
+  width: 18rem;
+  height: 20rem;
+  object-fit: cover;
 
-.home-con {
- 
-    flex-direction: row-reverse;
-    align-items: center;
-    justify-content: center;
-} 
+  /* asymmetric organic shape */
+  border-radius: 48% 52% 65% 35% / 40% 45% 55% 60%;
 
- .home-intro {
-    width: 25rem;
-    margin: 0 1.2rem;
-} 
+  border: 5px solid #fdc435;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
 
+  transition: transform 0.4s ease;
+}
+
+.profile-image > img:hover {
+  transform: scale(1.03);
+}
+
+.home-intro {
+  width: 25rem;
+  max-width: 100%;
+  margin: 0 1.2rem;
+}
 
 .p-intro {
-    font-family: "Playwrite CU Guides", cursive;
-    font-weight: 500;
-    font-style: normal;
-    font-size: 1.1rem;
+  font-family: "Playwrite CU Guides", cursive;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 1.1rem;
 }
 
 .wel {
-    font-family: "SN Pro", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 500;
-    font-style: normal;
-    font-size: 2.1rem;
+  font-family: "SN Pro", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 2.1rem;
+}
 
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 900px) {
+
+  .home-con {
+    margin: 0 35px;
+    gap: 2rem;
+  }
+
+  .profile-image > img {
+    width: 15rem;
+    height: 17rem;
+  }
+
+  .home-intro {
+    width: 22rem;
+  }
+
+  .wel {
+    font-size: 1.8rem;
+  }
+
+  .p-intro {
+    font-size: 1rem;
+  }
+
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 650px) {
+
+  .home-con {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    min-height: 100vh;
+    margin: 0 20px;
+    padding: 40px 0;
+    gap: 2.5rem;
+  }
+
+  .profile-image {
+    order: 1;
+  }
+
+  .profile-image > img {
+    width: 13rem;
+    height: 15rem;
+  }
+
+  .home-glass {
+    order: 2;
+    width: 100%;
+    max-width: 400px;
+    padding: 25px 20px;
+  }
+
+  .home-intro {
+    width: 100%;
+    margin: 0;
+  }
+
+  .wel {
+    font-size: 1.6rem;
+  }
+
+  .p-intro {
+    font-size: 0.95rem;
+  }
+
+}
+
+
+/* =========================
+   SMALL MOBILE
+========================= */
+
+@media (max-width: 400px) {
+
+  .home-con {
+    margin: 0 15px;
+    gap: 2rem;
+  }
+
+  .profile-image > img {
+    width: 11rem;
+    height: 13rem;
+  }
+
+  .home-glass {
+    padding: 20px 15px;
+  }
+
+  .wel {
+    font-size: 1.4rem;
+  }
+
+  .p-intro {
+    font-size: 0.9rem;
+  }
 
 }
