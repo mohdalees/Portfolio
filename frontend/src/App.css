@@ -1,10 +1,17 @@
-@import url('https://fonts.googleapis.com/css2?family=SN+Pro:ital,wght@0,200..900;1,200..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Playwrite+CU+Guides&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 
 body {
     margin: 0;
     padding: 0;
 }
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* =========================
+   NAVBAR
+========================= */
 
 .navbar {
     display: flex;
@@ -14,41 +21,39 @@ body {
     background: #2e3d15;
 }
 
-/* .navbar h2 {
-    color: #00e5ff;
-    margin: 0;
-} */
-
 .navbar a {
-    color: #e0f7fa;
+    color: #f5f7e8;
     margin: 0 12px;
     text-decoration: none;
     font-weight: 600;
-    transition: 0.3s;
+    font-family: "Nunito", sans-serif;
+    transition: color 0.3s ease;
 }
 
 .navbar a:hover {
-    color: #ff8c00;
+    color: #d1dc8a;
 }
 
 
-/* .container {
-    padding: 20px;
-    margin-bottom: 10rem;
-} */
+/* =========================
+   CARD
+========================= */
 
 .card {
-    border: 1px solid #ddd;
+    border: 1px solid #a5b85a;
     padding: 10px;
     margin: 10px;
 }
 
+
+/* =========================
+   FOOTER
+========================= */
+
 .footer {
     text-align: center;
     padding: 12px;
-    background: #2e3d15;  /* darker glass */
-    /* backdrop-filter: blur(12px); */
-    /* box-shadow: 0 -4px 16px rgba(0, 255, 255, 0.15);
-    border-top: 1px solid rgba(255, 255, 255, 0.25); */
-    color: #e0f7fa;
+    background: #2e3d15;
+    color: #e2e8c9;
+    font-family: "Nunito", sans-serif;
 }

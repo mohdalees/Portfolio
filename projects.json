@@ -1,18 +1,28 @@
 [
     {
         "title": "Service Booking App",
-        "tech": "MERN",
-        "framework":"Tailwind,Express",
-        "desc": "Users can book local service providers."
+        "tech": "MongoDB , React , Node , Tailwind , Express",
+        "desc": "Users can book local service providers.",
+        "github":""
     },
+
     {
         "title": "Food Order Website",
-        "tech": "React + Node",
-        "desc": "Online food ordering system."
+        "tech": "React , Node , Bootstrap , Express",
+        "desc": "Online food ordering system.",
+        "github":""
     },
+
     {
-        "title": "Portfolio Website",
-        "tech": "React + Flask + MongoDB",
-        "desc": "My personal portfolio."
+        "title": "Bella Cucina",
+        "tech": "React , CSS",
+        "desc": "Canva design converted into React",
+        "github":""
+    },
+
+    {
+        "title": "Figma Portfolio",
+        "tech": "React , Tailwind",
+        "desc": "Figma portfolio design converted into React"
     }
 ]

@@ -15,30 +15,46 @@
 }
 
 .home-glass {
+  color: #f5f7e8;
+  backdrop-filter: blur(12px);
+  background: rgba(220, 230, 170, 0.12);
+  box-shadow: 0 8px 32px rgba(165, 184, 90, 0.35);
+  border: 2px solid #a5b85a;
+}
+
+.home-glass {
   padding: 30px;
   border-radius: 18px;
   text-align: center;
-  color: white;
+  /* color: white;
   backdrop-filter: blur(12px);
   background: rgba(255, 255, 255, 0.12);
-  box-shadow: 0 8px 32px rgba(0, 255, 255, 0.2);
-  border: 1px solid rgba(255, 255, 255, 0.25);
+  box-shadow: 0 8px 32px #fdc435;
+  border: 2px solid #fdc435; */
   max-width: 100%;
+  transition: transform 0.4s ease;
+}
+
+
+.home-glass:hover {
+  transform: scale(1.03);
 }
 
 .home-glass h1 {
-  color: #00e5ff;
+  /* color: #00e5ff; */
+  color: #d1dc8a;
 }
 
 .home-glass p {
-  color: #e0f7fa;
+  /* color: #e0f7fa; */
+  color: #e2e8c9;
 }
 
 .profile-image {
   flex-shrink: 0;
 }
 
-.profile-image > img {
+.profile-image>img {
   width: 18rem;
   height: 20rem;
   object-fit: cover;
@@ -46,13 +62,14 @@
   /* asymmetric organic shape */
   border-radius: 48% 52% 65% 35% / 40% 45% 55% 60%;
 
-  border: 5px solid #fdc435;
+  /* border: 5px solid #fdc435; */
+  border: 5px solid #a5b85a;
   box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
 
   transition: transform 0.4s ease;
 }
 
-.profile-image > img:hover {
+.profile-image>img:hover {
   transform: scale(1.03);
 }
 
@@ -63,18 +80,18 @@
 }
 
 .p-intro {
-  font-family: "Playwrite CU Guides", cursive;
-  font-weight: 500;
+  font-family: "Nunito", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
   font-style: normal;
   font-size: 1.1rem;
 }
 
 .wel {
-  font-family: "SN Pro", sans-serif;
+  font-family: "Raleway", sans-serif;
   font-optical-sizing: auto;
   font-weight: 500;
   font-style: normal;
-  font-size: 2.1rem;
 }
 
 
@@ -89,7 +106,7 @@
     gap: 2rem;
   }
 
-  .profile-image > img {
+  .profile-image>img {
     width: 15rem;
     height: 17rem;
   }
@@ -129,7 +146,7 @@
     order: 1;
   }
 
-  .profile-image > img {
+  .profile-image>img {
     width: 13rem;
     height: 15rem;
   }
@@ -168,7 +185,7 @@
     gap: 2rem;
   }
 
-  .profile-image > img {
+  .profile-image>img {
     width: 11rem;
     height: 13rem;
   }
