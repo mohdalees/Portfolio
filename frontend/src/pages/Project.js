@@ -6,6 +6,7 @@ const API_URL = process.env.REACT_APP_API_URL;
 
 export default function Projects() {
   const [projects, setProjects] = useState([]);
+  const [showAll, setShowAll] = useState(false);
 
   useEffect(() => {
     axios
@@ -14,12 +15,17 @@ export default function Projects() {
       .catch((err) => console.error("Projects API error:", err));
   }, []);
 
+  // Show only 3 projects initially
+  const visibleProjects = showAll
+    ? projects
+    : projects.slice(0, 3);
+
   return (
     <div className="projects-container">
       <h1 className="projects-title">My Projects</h1>
 
       <div className="projects-grid">
-        {projects.map((p, i) => (
+        {visibleProjects.map((p, i) => (
           <div key={i} className="project-card">
 
             {/* Project Image */}
@@ -27,7 +33,7 @@ export default function Projects() {
               <img
                 src={
                   p.image ||
-                  "https://via.placeholder.com/400"
+                  "https://postimages.org/"
                 }
                 alt={p.title || "Project"}
                 className="project-img"
@@ -55,15 +61,20 @@ export default function Projects() {
                 <a href={p.github}>GitHub</a>
                 {/* <a href={project.demo}>Live Demo</a> */}
               </div>
-
-              {/* <p>
-                <b>Framework:</b> {p.framework}
-              </p> */}
-
             </div>
           </div>
         ))}
       </div>
+      {/* More Projects Button */}
+      {projects.length > 3 && (
+        <div className="more-projects">
+          <button
+            onClick={() => setShowAll(!showAll)}
+          >
+            {showAll ? "Show Less" : "More Projects"}
+          </button>
+        </div>
+      )}
     </div>
   );
 }

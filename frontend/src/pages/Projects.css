@@ -321,6 +321,44 @@
 
 
 /* =========================
+   MORE PROJECTS BUTTON
+========================= */
+
+.more-projects {
+  display: flex;
+  justify-content: center;
+  margin-top: 45px;
+}
+
+.more-projects button {
+  padding: 12px 28px;
+
+  border: 2px solid #a5b85a;
+  border-radius: 50px;
+
+  background: #d1dc8a;
+  color: #263411;
+
+  font-family: "Nunito", sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+
+  cursor: pointer;
+
+  transition: all 0.3s ease;
+}
+
+.more-projects button:hover {
+  background: #a5b85a;
+  border-color: #d1dc8a;
+
+  transform: translateY(-3px);
+
+  box-shadow: 0 8px 20px rgba(165, 184, 90, 0.3);
+}
+
+
+/* =========================
    TABLET
 ========================= */
 
