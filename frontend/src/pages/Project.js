@@ -7,13 +7,49 @@ const API_URL = process.env.REACT_APP_API_URL;
 export default function Projects() {
   const [projects, setProjects] = useState([]);
   const [showAll, setShowAll] = useState(false);
+  const [loading, setloading] = useState(true);
+  const [error, seterror] = useState(false);
 
   useEffect(() => {
     axios
       .get(`${API_URL}/api/projects`)
-      .then((res) => setProjects(res.data))
-      .catch((err) => console.error("Projects API error:", err));
+      .then((res) => {
+        setProjects(res.data);
+        setloading(false);
+      })
+      .catch((err) => {
+        console.error("Projects API error:", err);
+        seterror(true);
+        setloading(false);
+      });
   }, []);
+
+  if (loading) {
+    return (
+      <div className="about-container">
+        <div className="loading-message">
+          <div className="loader"></div>
+          <h2>Loading About Me...</h2>
+          <p>
+            Please wait while the portfolio server wakes up.
+            <br />
+            This may take a few moments.
+          </p>
+        </div>
+      </div>
+    );
+  }
+
+  if (error) {
+    return (
+      <div className="about-container">
+        <div className="loading-message">
+          <h2>Unable to load About Me</h2>
+          <p>Please refresh the page and try again.</p>
+        </div>
+      </div>
+    );
+  }
 
   // Show only 3 projects initially
   const visibleProjects = showAll
